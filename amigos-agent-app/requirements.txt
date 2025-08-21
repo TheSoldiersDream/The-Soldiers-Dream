@@ -1,0 +1,4 @@
+# Amigos Agent App Requirements
+
+asyncio>=3.7
+typing>=3.7
