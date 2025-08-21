@@ -1,0 +1,26 @@
+{
+  "name": "amigos-agent-app",
+  "version": "1.0.0",
+  "description": "Autonomous Agent Application - Agent Amigos App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd amigos-agent-app/backend && npm run dev",
+    "frontend:dev": "cd amigos-agent-app/frontend && npm start",
+    "install:all": "npm install && cd amigos-agent-app/backend && npm install && cd ../frontend && npm install",
+    "build": "cd amigos-agent-app/backend && npm run build && cd ../frontend && npm run build",
+    "start": "cd amigos-agent-app/backend && npm start"
+  },
+  "keywords": [
+    "agent",
+    "autonomous",
+    "ai",
+    "amigos",
+    "assistant"
+  ],
+  "author": "The Soldiers Dream",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

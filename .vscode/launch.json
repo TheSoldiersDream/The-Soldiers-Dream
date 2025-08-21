@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Agent Amigos App",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/amigos-agent-app/backend/src/server.js",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Debug Frontend",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/amigos-agent-app/frontend/node_modules/.bin/react-scripts",
+      "args": ["start"],
+      "cwd": "${workspaceFolder}/amigos-agent-app/frontend",
+      "env": {
+        "BROWSER": "none"
+      },
+      "console": "integratedTerminal"
+    }
+  ]
+}
